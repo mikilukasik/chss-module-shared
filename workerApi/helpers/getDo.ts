@@ -1,4 +1,4 @@
-import { getRandomId } from "../../../chss-frontend/src/helpers/utils/getRandomId";
+import { getRandomId } from "../../utils/getRandomId";
 import { Conversations } from "../apiTypes";
 
 export const getDo =
