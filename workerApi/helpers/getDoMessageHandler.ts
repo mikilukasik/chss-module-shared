@@ -1,4 +1,4 @@
-import { MessagePayload, OnHandlers } from "../apiTypes";
+import { MessagePayload, OnHandlers } from "../apiTypes.js";
 
 export const getDoMessageHandler =
   ({ onHandlers, worker }: { onHandlers: OnHandlers; worker?: any }) =>

@@ -1,17 +1,19 @@
-import { Conversations, MessageHandlers, OnHandlers } from "../apiTypes";
-import { getDoMessageHandler } from "./getDoMessageHandler";
-import { getResponseMessageHandler } from "./getResponseMessageHandler";
+import { Conversations, MessageHandlers, OnHandlers } from "../apiTypes.js";
+import { getDoMessageHandler } from "./getDoMessageHandler.js";
+import { getResponseMessageHandler } from "./getResponseMessageHandler.js";
 
 export const getMessageHandlers = ({
   conversations,
   onHandlers,
   worker,
+  parentPort,
 }: {
   conversations: Conversations;
   onHandlers: OnHandlers;
   worker?: any;
+  parentPort?: any;
 }): MessageHandlers => ({
-  do: getDoMessageHandler({ onHandlers, worker }),
+  do: getDoMessageHandler({ onHandlers, worker: worker || parentPort }),
 
   answer: getResponseMessageHandler({
     handlerKey: "resolve",

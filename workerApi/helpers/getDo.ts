@@ -1,5 +1,5 @@
-import { getRandomId } from "../../utils/getRandomId";
-import { Conversations } from "../apiTypes";
+import { getRandomId } from "../../utils/getRandomId.js";
+import { Conversations } from "../apiTypes.js";
 
 export const getDo =
   ({ conversations, worker }: { conversations: Conversations; worker?: any }) =>
