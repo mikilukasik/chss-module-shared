@@ -1,8 +1,8 @@
-import { Conversations, MessageHandlers, OnHandlers } from "./apiTypes.js";
-import { getDo } from "./helpers/getDo.js";
-import { getOn } from "./helpers/getOn.js";
-import { getMessageHandlers } from "./helpers/getMessageHandlers.js";
-import { setOnmessage } from "./helpers/setOnmessage.js";
+import { Conversations, MessageHandlers, OnHandlers } from "./apiTypes";
+import { getDo } from "./helpers/getDo";
+import { getOn } from "./helpers/getOn";
+import { getMessageHandlers } from "./helpers/getMessageHandlers";
+import { setOnmessage } from "./helpers/setOnmessage";
 
 export class WorkerApi {
   private conversations: Conversations = {};

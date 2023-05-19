@@ -1,6 +1,6 @@
-import { Conversations, MessageHandlers, OnHandlers } from "../apiTypes.js";
-import { getDoMessageHandler } from "./getDoMessageHandler.js";
-import { getResponseMessageHandler } from "./getResponseMessageHandler.js";
+import { Conversations, MessageHandlers, OnHandlers } from "../apiTypes";
+import { getDoMessageHandler } from "./getDoMessageHandler";
+import { getResponseMessageHandler } from "./getResponseMessageHandler";
 
 export const getMessageHandlers = ({
   conversations,

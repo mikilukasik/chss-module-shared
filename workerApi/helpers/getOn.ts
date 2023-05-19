@@ -1,4 +1,4 @@
-import { OnHandler, OnHandlers } from "../apiTypes.js";
+import { OnHandler, OnHandlers } from "../apiTypes";
 
 export const getOn =
   ({ onHandlers }: { onHandlers: OnHandlers }) =>

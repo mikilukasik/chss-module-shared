@@ -1,4 +1,4 @@
-import { Conversations, MessagePayload } from "../apiTypes.js";
+import { Conversations, MessagePayload } from "../apiTypes";
 
 export const getResponseMessageHandler =
   ({

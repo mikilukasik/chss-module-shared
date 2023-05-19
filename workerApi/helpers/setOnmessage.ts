@@ -1,4 +1,4 @@
-import { MessageHandlers, MessagePayload } from "../apiTypes.js";
+import { MessageHandlers, MessagePayload } from "../apiTypes";
 
 export const setOnmessage = ({
   messageHandlers,

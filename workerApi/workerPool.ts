@@ -1,4 +1,4 @@
-import { WorkerApi } from "./workerApi.js";
+import { WorkerApi } from "./workerApi";
 
 export class WorkerPool {
   private workerAvaiters: ((value: WorkerApi) => void)[] = [];

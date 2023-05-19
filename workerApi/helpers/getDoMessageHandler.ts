@@ -1,9 +1,10 @@
-import { MessagePayload, OnHandlers } from "../apiTypes.js";
+import { MessagePayload, OnHandlers } from "../apiTypes";
 
 export const getDoMessageHandler =
   ({ onHandlers, worker }: { onHandlers: OnHandlers; worker?: any }) =>
   async ({ id, command, data }: MessagePayload) => {
     try {
+      console.log(onHandlers);
       if (!onHandlers[command]) {
         const payload = {
           type: "error",
