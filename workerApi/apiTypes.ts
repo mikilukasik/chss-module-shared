@@ -15,8 +15,6 @@ export type MessagePayload = {
 
 export type MessageHandlers = Record<string, (msg: MessagePayload) => void>;
 
-export type OnHandler = (
-  data: Record<string | number, any>
-) => any | PromiseLike<any>;
+export type OnHandler = (data: any) => any | PromiseLike<any>;
 
 export type OnHandlers = Record<string | number, OnHandler>;
